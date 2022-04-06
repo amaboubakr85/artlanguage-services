@@ -140,7 +140,7 @@ main {
         position: absolute;
         bottom: 0;
         left: 50%;
-        width: 60vw;
+        width: 50vw;
         transform: translateX(-50%);
         text-align: center;
         backdrop-filter: blur(3px);
@@ -252,7 +252,7 @@ main {
   position: relative;
   background-color: #000;
   .head {
-    margin: 1.3rem 0;
+    margin: 2rem 0;
     h2 {
       color: $main_color;
     }
@@ -274,10 +274,23 @@ main {
     z-index: 1;
     max-width: 70vw;
     margin: 2rem auto;
+    .items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1rem;
+      .video-item:first-child {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        height: calc(400px + 1rem);
+      }
+    }
+
     .video-item {
-      margin-bottom: 0.9rem;
+      // margin-bottom: 0.9rem;
       position: relative;
-      height: 250px;
+      height: 200px;
+
       .overlay {
         img {
           cursor: pointer;
