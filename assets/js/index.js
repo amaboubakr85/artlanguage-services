@@ -19,7 +19,7 @@ prices.forEach((item) => {
     // item.sibl.classList.remove('active')
     // item.classList.add('active')
     [...item.parentElement.children].forEach((sib) =>
-        sib.classList.remove("active")
+      sib.classList.remove("active")
     );
     item.classList.add("active");
     let cat = item.getAttribute("data-class");
@@ -41,7 +41,7 @@ if (albums) {
   albums.forEach((item) => {
     item.addEventListener("click", function () {
       [...item.parentElement.children].forEach((sib) =>
-          sib.classList.remove("active")
+        sib.classList.remove("active")
       );
       item.classList.add("active");
       let cat = item.getAttribute("data-class");
@@ -51,19 +51,20 @@ if (albums) {
         item.classList.add("d-none");
       });
       document
-          .querySelector(`.albums .albums-images${cat}`)
-          .classList.remove("d-none");
+        .querySelector(`.albums .albums-images${cat}`)
+        .classList.remove("d-none");
       document
-          .querySelector(`.albums .albums-images${cat}`)
-          .classList.add("d-grid");
+        .querySelector(`.albums .albums-images${cat}`)
+        .classList.add("d-grid");
     });
   });
 }
 
 let allImages = document.querySelectorAll(".albums .albums-images");
-allImages.forEach(item => {
-  item.classList.add('d-none');
-
-})
-document.querySelector(`.albums .albums-images.foods`).classList.remove('d-none');
-document.querySelector(`.albums .albums-images.foods`).classList.add('d-grid');
+allImages.forEach((item) => {
+  item.classList.add("d-none");
+});
+document
+  .querySelector(`.albums .albums-images.foods`)
+  .classList.remove("d-none");
+document.querySelector(`.albums .albums-images.foods`).classList.add("d-grid");
