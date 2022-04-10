@@ -1,5 +1,18 @@
 $main_color: #ba8748;
 
+@font-face {
+  font-family: DINnext;
+  src: url("../../fonts/din-next-arabic-regular.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/din-next-arabic-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../../fonts/din-next-arabic-regular.woff") format("woff"), /* Modern Browsers */
+  url("../../fonts/din-next-arabic-regular.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../../fonts/din-next-arabic-regular.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+body {
+  font-family: DINnext;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -255,7 +268,6 @@ main {
     }
   }
 
-  
 
   .albums-images {
 

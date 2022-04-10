@@ -1,3 +1,14 @@
+@font-face {
+  font-family: DINnext;
+  src: url("../../fonts/din-next-arabic-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/din-next-arabic-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/din-next-arabic-regular.woff") format("woff"), url("../../fonts/din-next-arabic-regular.ttf") format("truetype"), url("../../fonts/din-next-arabic-regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+body {
+  font-family: DINnext;
+}
+
 * {
   margin: 0;
   padding: 0;
