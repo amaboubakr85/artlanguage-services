@@ -10,7 +10,7 @@ $main_color: #ba8748;
 }
 
 body {
-  font-family: DINnext;
+
 }
 
 * {
@@ -20,7 +20,10 @@ body {
 }
 
 body {
-  background-color: #fff;
+  //background-color: #000000;
+  //color: #fff;
+  background: #fff;
+  font-family: DINnext;
 }
 
 .menus {
@@ -825,5 +828,31 @@ footer {
   }
   .videos .container-custom .items .video-item:first-child {
     height: 200px;
+  }
+}
+
+//modifications for new theme system
+body {
+  background-color: #000;
+  color: #fff;
+
+  .albums {
+    background: #000;
+  }
+}
+
+.prices .photos-price .cat,
+.prices .videos-price .cat {
+  padding: 0 !important;
+  background: #fff;
+  color: #000;
+  margin: 0 0.5rem;
+  .data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button{
+   margin-bottom: 1.2rem;
   }
 }

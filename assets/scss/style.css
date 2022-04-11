@@ -5,10 +5,6 @@
   src: url("../../fonts/din-next-arabic-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/din-next-arabic-regular.woff") format("woff"), url("../../fonts/din-next-arabic-regular.ttf") format("truetype"), url("../../fonts/din-next-arabic-regular.svg#svgFontName") format("svg");
   /* Legacy iOS */
 }
-body {
-  font-family: DINnext;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +12,8 @@ body {
 }
 
 body {
-  background-color: #fff;
+  background: #fff;
+  font-family: DINnext;
 }
 
 .menus {
@@ -668,6 +665,31 @@ footer .footer-container .content .copyright img {
   .videos .container-custom .items .video-item:first-child {
     height: 200px;
   }
+}
+body {
+  background-color: #000;
+  color: #fff;
+}
+body .albums {
+  background: #000;
+}
+
+.prices .photos-price .cat,
+.prices .videos-price .cat {
+  padding: 0 !important;
+  background: #fff;
+  color: #000;
+  margin: 0 0.5rem;
+}
+.prices .photos-price .cat .data,
+.prices .videos-price .cat .data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prices .photos-price .cat .button,
+.prices .videos-price .cat .button {
+  margin-bottom: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
