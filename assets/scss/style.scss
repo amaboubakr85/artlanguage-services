@@ -829,6 +829,21 @@ footer {
   .videos .container-custom .items .video-item:first-child {
     height: 200px;
   }
+  .row-sm {
+    display: flex;
+    flex-wrap: wrap;
+
+    .cat {
+      &:nth-child(2) {
+        margin-top: 2rem !important;
+      }
+
+      flex: 1 0 75%
+    }
+  }
+  .contact-us .contact-form {
+    margin-right: 0;
+  }
 }
 
 //modifications for new theme system
@@ -847,12 +862,37 @@ body {
   background: #fff;
   color: #000;
   margin: 0 0.5rem;
-  .data{
+
+  .data {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .button{
-   margin-bottom: 1.2rem;
+
+  .button {
+    margin-bottom: 1.2rem;
+  }
+}
+
+
+.albums .albums-images .item {
+  overflow: hidden;
+
+  img {
+    transition: all 0.5s ease-in-out;
+    //-webkit-transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1);
+  }
+
+  &:hover {
+    filter: brightness(0.5);
+
+    a {
+      img {
+        //-webkit-transform: scale(2) rotate(360deg);
+        -webkit-transform: scale(1.3);
+
+      }
+    }
   }
 }

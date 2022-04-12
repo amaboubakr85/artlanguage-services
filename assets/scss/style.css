@@ -665,6 +665,21 @@ footer .footer-container .content .copyright img {
   .videos .container-custom .items .video-item:first-child {
     height: 200px;
   }
+
+  .row-sm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row-sm .cat {
+    flex: 1 0 75%;
+  }
+  .row-sm .cat:nth-child(2) {
+    margin-top: 2rem !important;
+  }
+
+  .contact-us .contact-form {
+    margin-right: 0;
+  }
 }
 body {
   background-color: #000;
@@ -690,6 +705,20 @@ body .albums {
 .prices .photos-price .cat .button,
 .prices .videos-price .cat .button {
   margin-bottom: 1.2rem;
+}
+
+.albums .albums-images .item {
+  overflow: hidden;
+}
+.albums .albums-images .item img {
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1);
+}
+.albums .albums-images .item:hover {
+  filter: brightness(0.5);
+}
+.albums .albums-images .item:hover a img {
+  -webkit-transform: scale(1.3);
 }
 
 /*# sourceMappingURL=style.css.map */
